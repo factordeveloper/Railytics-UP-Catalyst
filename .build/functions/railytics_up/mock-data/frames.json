@@ -1,0 +1,382 @@
+{
+  "frames_processed": 4520,
+  "frames_discarded": 3195,
+  "frames": [
+    {
+      "filename": "frame_folkston_001.jpg",
+      "filepath": "frames_with_trains/frame_folkston_001.jpg",
+      "timestamp": "2026-02-07T08:12:30Z",
+      "size": 245760,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 0, "confidence": 0.92, "bbox": [120, 80, 580, 420], "class_name": "Railcar", "serials": [{"text": "CSXT 3194", "cleaned_text": "CSXT 3194", "confidence": 0.87, "bbox_relative": [0.2, 0.3, 0.5, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.88, "bbox": [600, 90, 980, 400], "class_name": "Railcar", "serials": [{"text": "DTTX 740215", "cleaned_text": "DTTX 740215", "confidence": 0.82, "bbox_relative": [0.6, 0.3, 0.9, 0.4]}], "serial_count": 1},
+        {"class": 1, "confidence": 0.95, "bbox": [50, 100, 200, 380], "class_name": "Locomotive", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_folkston_015.jpg",
+      "filepath": "frames_with_trains/frame_folkston_015.jpg",
+      "timestamp": "2026-02-07T08:13:15Z",
+      "size": 238592,
+      "has_trains": true,
+      "detection_count": 4,
+      "total_serials": 3,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 0, "confidence": 0.91, "bbox": [100, 70, 520, 410], "class_name": "Railcar", "serials": [{"text": "CSXT 7812", "cleaned_text": "CSXT 7812", "confidence": 0.89, "bbox_relative": [0.15, 0.25, 0.45, 0.35]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.87, "bbox": [540, 80, 900, 390], "class_name": "Railcar", "serials": [{"text": "TTJX 585612", "cleaned_text": "TTJX 585612", "confidence": 0.78, "bbox_relative": [0.55, 0.28, 0.85, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.84, "bbox": [920, 100, 1200, 380], "class_name": "Railcar", "serials": [{"text": "BNSF 2145", "cleaned_text": "BNSF 2145", "confidence": 0.91, "bbox_relative": [0.75, 0.3, 0.95, 0.4]}], "serial_count": 1},
+        {"class": 2, "confidence": 0.82, "bbox": [200, 150, 400, 300], "class_name": "Reporting Mark", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_folkston_032.jpg",
+      "filepath": "frames_with_trains/frame_folkston_032.jpg",
+      "timestamp": "2026-02-07T08:14:06Z",
+      "size": 251904,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 0, "confidence": 0.93, "bbox": [200, 90, 700, 430], "class_name": "Railcar", "serials": [{"text": "NS 9645", "cleaned_text": "NS 9645", "confidence": 0.85, "bbox_relative": [0.25, 0.3, 0.6, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.79, "bbox": [750, 110, 1100, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_laplata_001.jpg",
+      "filepath": "frames_with_trains/frame_laplata_001.jpg",
+      "timestamp": "2026-02-07T07:45:00Z",
+      "size": 267264,
+      "has_trains": true,
+      "detection_count": 5,
+      "total_serials": 3,
+      "stream_id": "stream-002-laplata",
+      "detections": [
+        {"class": 1, "confidence": 0.96, "bbox": [50, 60, 350, 450], "class_name": "Locomotive", "serials": [{"text": "BNSF 7834", "cleaned_text": "BNSF 7834", "confidence": 0.94, "bbox_relative": [0.08, 0.2, 0.3, 0.35]}], "serial_count": 1},
+        {"class": 1, "confidence": 0.94, "bbox": [370, 70, 650, 440], "class_name": "Locomotive", "serials": [{"text": "BNSF 4521", "cleaned_text": "BNSF 4521", "confidence": 0.91, "bbox_relative": [0.32, 0.22, 0.55, 0.37]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.89, "bbox": [670, 80, 950, 420], "class_name": "Railcar", "serials": [{"text": "DTTX 785412", "cleaned_text": "DTTX 785412", "confidence": 0.76, "bbox_relative": [0.58, 0.28, 0.82, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.86, "bbox": [970, 90, 1200, 400], "class_name": "Railcar", "serials": [], "serial_count": 0},
+        {"class": 2, "confidence": 0.88, "bbox": [100, 180, 300, 280], "class_name": "Reporting Mark", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_laplata_025.jpg",
+      "filepath": "frames_with_trains/frame_laplata_025.jpg",
+      "timestamp": "2026-02-07T07:46:15Z",
+      "size": 255488,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-002-laplata",
+      "detections": [
+        {"class": 0, "confidence": 0.90, "bbox": [150, 85, 600, 425], "class_name": "Railcar", "serials": [{"text": "JB HUNT 512345", "cleaned_text": "JBHUNT 512345", "confidence": 0.72, "bbox_relative": [0.18, 0.3, 0.52, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.87, "bbox": [620, 95, 1000, 410], "class_name": "Railcar", "serials": [{"text": "SWIFT 234561", "cleaned_text": "SWIFT 234561", "confidence": 0.68, "bbox_relative": [0.55, 0.32, 0.88, 0.44]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.82, "bbox": [1020, 100, 1250, 395], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_cajon_001.jpg",
+      "filepath": "frames_with_trains/frame_cajon_001.jpg",
+      "timestamp": "2026-02-07T10:05:20Z",
+      "size": 278528,
+      "has_trains": true,
+      "detection_count": 4,
+      "total_serials": 3,
+      "stream_id": "stream-003-cajon",
+      "detections": [
+        {"class": 1, "confidence": 0.97, "bbox": [30, 50, 380, 460], "class_name": "Locomotive", "serials": [{"text": "UP 8523", "cleaned_text": "UP 8523", "confidence": 0.96, "bbox_relative": [0.05, 0.15, 0.32, 0.3]}], "serial_count": 1},
+        {"class": 1, "confidence": 0.95, "bbox": [400, 55, 700, 450], "class_name": "Locomotive", "serials": [{"text": "UP 5467", "cleaned_text": "UP 5467", "confidence": 0.93, "bbox_relative": [0.35, 0.17, 0.6, 0.32]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.91, "bbox": [720, 70, 1050, 430], "class_name": "Railcar", "serials": [{"text": "BNSF 6234", "cleaned_text": "BNSF 6234", "confidence": 0.88, "bbox_relative": [0.62, 0.25, 0.9, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.85, "bbox": [1070, 85, 1280, 410], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_cajon_040.jpg",
+      "filepath": "frames_with_trains/frame_cajon_040.jpg",
+      "timestamp": "2026-02-07T10:07:20Z",
+      "size": 269312,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-003-cajon",
+      "detections": [
+        {"class": 0, "confidence": 0.89, "bbox": [100, 75, 550, 435], "class_name": "Railcar", "serials": [{"text": "DTTX 730145", "cleaned_text": "DTTX 730145", "confidence": 0.79, "bbox_relative": [0.12, 0.27, 0.48, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.86, "bbox": [570, 85, 950, 420], "class_name": "Railcar", "serials": [{"text": "TTGX 912345", "cleaned_text": "TTGX 912345", "confidence": 0.74, "bbox_relative": [0.5, 0.3, 0.82, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.81, "bbox": [970, 95, 1260, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_rochelle_001.jpg",
+      "filepath": "frames_with_trains/frame_rochelle_001.jpg",
+      "timestamp": "2026-02-07T06:18:45Z",
+      "size": 241664,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-004-rochelle",
+      "detections": [
+        {"class": 1, "confidence": 0.94, "bbox": [80, 65, 400, 445], "class_name": "Locomotive", "serials": [{"text": "UP 6234", "cleaned_text": "UP 6234", "confidence": 0.92, "bbox_relative": [0.1, 0.2, 0.35, 0.33]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.88, "bbox": [420, 75, 800, 425], "class_name": "Railcar", "serials": [{"text": "TTJX 567123", "cleaned_text": "TTJX 567123", "confidence": 0.77, "bbox_relative": [0.37, 0.28, 0.68, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.83, "bbox": [820, 90, 1150, 405], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_rochelle_030.jpg",
+      "filepath": "frames_with_trains/frame_rochelle_030.jpg",
+      "timestamp": "2026-02-07T06:20:15Z",
+      "size": 248832,
+      "has_trains": true,
+      "detection_count": 4,
+      "total_serials": 3,
+      "stream_id": "stream-004-rochelle",
+      "detections": [
+        {"class": 0, "confidence": 0.91, "bbox": [60, 70, 450, 440], "class_name": "Railcar", "serials": [{"text": "UP 4891", "cleaned_text": "UP 4891", "confidence": 0.90, "bbox_relative": [0.08, 0.22, 0.38, 0.35]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.87, "bbox": [470, 80, 830, 420], "class_name": "Railcar", "serials": [{"text": "DTTX 741234", "cleaned_text": "DTTX 741234", "confidence": 0.81, "bbox_relative": [0.4, 0.28, 0.72, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.84, "bbox": [850, 90, 1150, 405], "class_name": "Railcar", "serials": [{"text": "NS 2456", "cleaned_text": "NS 2456", "confidence": 0.86, "bbox_relative": [0.73, 0.3, 0.95, 0.42]}], "serial_count": 1},
+        {"class": 2, "confidence": 0.80, "bbox": [500, 170, 700, 260], "class_name": "Reporting Mark", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_tehachapi_001.jpg",
+      "filepath": "frames_with_trains/frame_tehachapi_001.jpg",
+      "timestamp": "2026-02-07T12:45:30Z",
+      "size": 285696,
+      "has_trains": true,
+      "detection_count": 5,
+      "total_serials": 4,
+      "stream_id": "stream-005-tehachapi",
+      "detections": [
+        {"class": 1, "confidence": 0.98, "bbox": [20, 40, 350, 470], "class_name": "Locomotive", "serials": [{"text": "UP 7912", "cleaned_text": "UP 7912", "confidence": 0.97, "bbox_relative": [0.04, 0.12, 0.3, 0.28]}], "serial_count": 1},
+        {"class": 1, "confidence": 0.96, "bbox": [370, 45, 650, 460], "class_name": "Locomotive", "serials": [{"text": "UP 5301", "cleaned_text": "UP 5301", "confidence": 0.94, "bbox_relative": [0.32, 0.14, 0.56, 0.3]}], "serial_count": 1},
+        {"class": 1, "confidence": 0.94, "bbox": [670, 50, 920, 450], "class_name": "Locomotive", "serials": [{"text": "UP 4823", "cleaned_text": "UP 4823", "confidence": 0.91, "bbox_relative": [0.58, 0.16, 0.78, 0.32]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.90, "bbox": [940, 65, 1200, 430], "class_name": "Railcar", "serials": [{"text": "BNSF 7456", "cleaned_text": "BNSF 7456", "confidence": 0.85, "bbox_relative": [0.8, 0.22, 0.98, 0.36]}], "serial_count": 1},
+        {"class": 2, "confidence": 0.87, "bbox": [100, 160, 300, 250], "class_name": "Reporting Mark", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_tehachapi_050.jpg",
+      "filepath": "frames_with_trains/frame_tehachapi_050.jpg",
+      "timestamp": "2026-02-07T12:48:00Z",
+      "size": 272384,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-005-tehachapi",
+      "detections": [
+        {"class": 0, "confidence": 0.88, "bbox": [130, 80, 580, 430], "class_name": "Railcar", "serials": [{"text": "DTTX 760234", "cleaned_text": "DTTX 760234", "confidence": 0.75, "bbox_relative": [0.15, 0.28, 0.5, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.85, "bbox": [600, 90, 980, 415], "class_name": "Railcar", "serials": [{"text": "TTGX 901234", "cleaned_text": "TTGX 901234", "confidence": 0.71, "bbox_relative": [0.52, 0.3, 0.84, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.80, "bbox": [1000, 100, 1270, 395], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_dalton_001.jpg",
+      "filepath": "frames_with_trains/frame_dalton_001.jpg",
+      "timestamp": "2026-02-07T13:10:00Z",
+      "size": 234496,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-006-dalton",
+      "detections": [
+        {"class": 1, "confidence": 0.93, "bbox": [90, 70, 420, 440], "class_name": "Locomotive", "serials": [{"text": "NS 8934", "cleaned_text": "NS 8934", "confidence": 0.91, "bbox_relative": [0.1, 0.2, 0.36, 0.33]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.88, "bbox": [440, 80, 820, 425], "class_name": "Railcar", "serials": [{"text": "CSXT 7234", "cleaned_text": "CSXT 7234", "confidence": 0.84, "bbox_relative": [0.38, 0.27, 0.7, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.82, "bbox": [840, 95, 1160, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_dalton_035.jpg",
+      "filepath": "frames_with_trains/frame_dalton_035.jpg",
+      "timestamp": "2026-02-07T13:11:45Z",
+      "size": 241664,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 2,
+      "stream_id": "stream-006-dalton",
+      "detections": [
+        {"class": 0, "confidence": 0.90, "bbox": [180, 85, 650, 430], "class_name": "Railcar", "serials": [{"text": "TBOX 662345", "cleaned_text": "TBOX 662345", "confidence": 0.79, "bbox_relative": [0.2, 0.28, 0.55, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.86, "bbox": [670, 90, 1080, 415], "class_name": "Railcar", "serials": [{"text": "DTTX 755612", "cleaned_text": "DTTX 755612", "confidence": 0.76, "bbox_relative": [0.58, 0.3, 0.92, 0.42]}], "serial_count": 1}
+      ]
+    },
+    {
+      "filename": "frame_folkston_065.jpg",
+      "filepath": "frames_with_trains/frame_folkston_065.jpg",
+      "timestamp": "2026-02-07T08:15:45Z",
+      "size": 259072,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 0, "confidence": 0.87, "bbox": [200, 95, 680, 425], "class_name": "Railcar", "serials": [{"text": "CSXT 6023", "cleaned_text": "CSXT 6023", "confidence": 0.83, "bbox_relative": [0.22, 0.3, 0.58, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.81, "bbox": [700, 105, 1050, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_laplata_060.jpg",
+      "filepath": "frames_with_trains/frame_laplata_060.jpg",
+      "timestamp": "2026-02-07T07:47:30Z",
+      "size": 262144,
+      "has_trains": true,
+      "detection_count": 4,
+      "total_serials": 2,
+      "stream_id": "stream-002-laplata",
+      "detections": [
+        {"class": 0, "confidence": 0.92, "bbox": [80, 65, 480, 445], "class_name": "Railcar", "serials": [{"text": "BNSF 7834", "cleaned_text": "BNSF 7834", "confidence": 0.90, "bbox_relative": [0.1, 0.2, 0.42, 0.35]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.88, "bbox": [500, 75, 860, 430], "class_name": "Railcar", "serials": [{"text": "DTTX 785412", "cleaned_text": "DTTX 785412", "confidence": 0.78, "bbox_relative": [0.43, 0.27, 0.74, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.84, "bbox": [880, 85, 1180, 415], "class_name": "Railcar", "serials": [], "serial_count": 0},
+        {"class": 0, "confidence": 0.79, "bbox": [1200, 95, 1280, 395], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_cajon_080.jpg",
+      "filepath": "frames_with_trains/frame_cajon_080.jpg",
+      "timestamp": "2026-02-07T10:09:20Z",
+      "size": 275456,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-003-cajon",
+      "detections": [
+        {"class": 0, "confidence": 0.90, "bbox": [110, 70, 560, 440], "class_name": "Railcar", "serials": [{"text": "COFC 456123", "cleaned_text": "COFC 456123", "confidence": 0.73, "bbox_relative": [0.13, 0.25, 0.48, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.86, "bbox": [580, 80, 950, 425], "class_name": "Railcar", "serials": [{"text": "UP 5467", "cleaned_text": "UP 5467", "confidence": 0.88, "bbox_relative": [0.5, 0.28, 0.82, 0.4]}], "serial_count": 1},
+        {"class": 2, "confidence": 0.83, "bbox": [150, 160, 350, 250], "class_name": "Reporting Mark", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_tehachapi_090.jpg",
+      "filepath": "frames_with_trains/frame_tehachapi_090.jpg",
+      "timestamp": "2026-02-07T12:50:00Z",
+      "size": 281600,
+      "has_trains": true,
+      "detection_count": 4,
+      "total_serials": 3,
+      "stream_id": "stream-005-tehachapi",
+      "detections": [
+        {"class": 0, "confidence": 0.93, "bbox": [50, 55, 420, 455], "class_name": "Railcar", "serials": [{"text": "CSXT 5123", "cleaned_text": "CSXT 5123", "confidence": 0.86, "bbox_relative": [0.06, 0.18, 0.36, 0.32]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.89, "bbox": [440, 65, 800, 440], "class_name": "Railcar", "serials": [{"text": "DTTX 760234", "cleaned_text": "DTTX 760234", "confidence": 0.77, "bbox_relative": [0.38, 0.24, 0.68, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.86, "bbox": [820, 75, 1120, 425], "class_name": "Railcar", "serials": [{"text": "UP 7912", "cleaned_text": "UP 7912", "confidence": 0.92, "bbox_relative": [0.7, 0.28, 0.95, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.80, "bbox": [1140, 90, 1280, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_rochelle_060.jpg",
+      "filepath": "frames_with_trains/frame_rochelle_060.jpg",
+      "timestamp": "2026-02-07T06:21:45Z",
+      "size": 245760,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-004-rochelle",
+      "detections": [
+        {"class": 0, "confidence": 0.91, "bbox": [150, 80, 620, 435], "class_name": "Railcar", "serials": [{"text": "UP 6234", "cleaned_text": "UP 6234", "confidence": 0.89, "bbox_relative": [0.18, 0.25, 0.53, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.84, "bbox": [640, 95, 1050, 410], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_folkston_100.jpg",
+      "filepath": "frames_with_trains/frame_folkston_100.jpg",
+      "timestamp": "2026-02-07T09:24:20Z",
+      "size": 252928,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 1, "confidence": 0.95, "bbox": [40, 55, 380, 455], "class_name": "Locomotive", "serials": [{"text": "CSXT 6023", "cleaned_text": "CSXT 6023", "confidence": 0.92, "bbox_relative": [0.06, 0.17, 0.32, 0.3]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.88, "bbox": [400, 70, 780, 435], "class_name": "Railcar", "serials": [{"text": "TBOX 661234", "cleaned_text": "TBOX 661234", "confidence": 0.80, "bbox_relative": [0.35, 0.25, 0.67, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.83, "bbox": [800, 85, 1150, 410], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_laplata_090.jpg",
+      "filepath": "frames_with_trains/frame_laplata_090.jpg",
+      "timestamp": "2026-02-07T07:49:30Z",
+      "size": 258048,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-002-laplata",
+      "detections": [
+        {"class": 0, "confidence": 0.87, "bbox": [200, 90, 680, 430], "class_name": "Railcar", "serials": [{"text": "SWIFT 234561", "cleaned_text": "SWIFT 234561", "confidence": 0.70, "bbox_relative": [0.22, 0.3, 0.58, 0.42]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.82, "bbox": [700, 100, 1080, 405], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_cajon_110.jpg",
+      "filepath": "frames_with_trains/frame_cajon_110.jpg",
+      "timestamp": "2026-02-07T10:10:50Z",
+      "size": 271360,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-003-cajon",
+      "detections": [
+        {"class": 0, "confidence": 0.86, "bbox": [180, 85, 650, 430], "class_name": "Railcar", "serials": [{"text": "BNSF 6234", "cleaned_text": "BNSF 6234", "confidence": 0.85, "bbox_relative": [0.2, 0.28, 0.55, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.80, "bbox": [670, 95, 1060, 410], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_dalton_070.jpg",
+      "filepath": "frames_with_trains/frame_dalton_070.jpg",
+      "timestamp": "2026-02-07T13:13:30Z",
+      "size": 238592,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 1,
+      "stream_id": "stream-006-dalton",
+      "detections": [
+        {"class": 0, "confidence": 0.89, "bbox": [160, 80, 620, 435], "class_name": "Railcar", "serials": [{"text": "DTTX 755612", "cleaned_text": "DTTX 755612", "confidence": 0.78, "bbox_relative": [0.18, 0.27, 0.53, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.83, "bbox": [640, 90, 1040, 415], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_tehachapi_130.jpg",
+      "filepath": "frames_with_trains/frame_tehachapi_130.jpg",
+      "timestamp": "2026-02-07T12:52:00Z",
+      "size": 289792,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 2,
+      "stream_id": "stream-005-tehachapi",
+      "detections": [
+        {"class": 0, "confidence": 0.91, "bbox": [100, 65, 530, 445], "class_name": "Railcar", "serials": [{"text": "BNSF 7456", "cleaned_text": "BNSF 7456", "confidence": 0.87, "bbox_relative": [0.12, 0.22, 0.45, 0.36]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.87, "bbox": [550, 75, 920, 430], "class_name": "Railcar", "serials": [{"text": "TTGX 901234", "cleaned_text": "TTGX 901234", "confidence": 0.73, "bbox_relative": [0.48, 0.28, 0.78, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.82, "bbox": [940, 85, 1250, 410], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    },
+    {
+      "filename": "frame_folkston_140.jpg",
+      "filepath": "frames_with_trains/frame_folkston_140.jpg",
+      "timestamp": "2026-02-07T09:26:55Z",
+      "size": 249856,
+      "has_trains": true,
+      "detection_count": 2,
+      "total_serials": 2,
+      "stream_id": "stream-001-folkston",
+      "detections": [
+        {"class": 0, "confidence": 0.90, "bbox": [140, 75, 600, 440], "class_name": "Railcar", "serials": [{"text": "UP 7832", "cleaned_text": "UP 7832", "confidence": 0.86, "bbox_relative": [0.16, 0.25, 0.52, 0.38]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.85, "bbox": [620, 85, 1000, 420], "class_name": "Railcar", "serials": [{"text": "DTTX 745612", "cleaned_text": "DTTX 745612", "confidence": 0.77, "bbox_relative": [0.54, 0.3, 0.86, 0.42]}], "serial_count": 1}
+      ]
+    },
+    {
+      "filename": "frame_rochelle_068.jpg",
+      "filepath": "frames_with_trains/frame_rochelle_068.jpg",
+      "timestamp": "2026-02-07T06:22:10Z",
+      "size": 243712,
+      "has_trains": true,
+      "detection_count": 3,
+      "total_serials": 1,
+      "stream_id": "stream-004-rochelle",
+      "detections": [
+        {"class": 0, "confidence": 0.88, "bbox": [120, 80, 550, 435], "class_name": "Railcar", "serials": [{"text": "DTTX 741234", "cleaned_text": "DTTX 741234", "confidence": 0.80, "bbox_relative": [0.14, 0.27, 0.47, 0.4]}], "serial_count": 1},
+        {"class": 0, "confidence": 0.83, "bbox": [570, 90, 950, 420], "class_name": "Railcar", "serials": [], "serial_count": 0},
+        {"class": 0, "confidence": 0.79, "bbox": [970, 100, 1260, 400], "class_name": "Railcar", "serials": [], "serial_count": 0}
+      ]
+    }
+  ]
+}
