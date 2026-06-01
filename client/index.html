@@ -335,6 +335,65 @@ table tr:hover{background:rgba(255,193,7,.05)}
   .det-table-header{display:none}
   .det-table-row{grid-template-columns:1fr;gap:8px;text-align:left;border-left-width:4px;padding:12px}
 }
+
+/* Responsive Table-to-Card styling for Multi-Stream */
+@media(max-width:768px){
+  .responsive-multistream-table, 
+  .responsive-multistream-table thead, 
+  .responsive-multistream-table tbody, 
+  .responsive-multistream-table th, 
+  .responsive-multistream-table td, 
+  .responsive-multistream-table tr { 
+    display: block; 
+  }
+  .responsive-multistream-table thead { 
+    display: none;
+  }
+  .responsive-multistream-table tr { 
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 193, 7, 0.15);
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  .responsive-multistream-table tr:hover {
+    background: rgba(255, 193, 7, 0.03);
+    border-color: rgba(255, 193, 7, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 176, 0, 0.15);
+  }
+  .responsive-multistream-table td { 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+    position: relative;
+    padding-left: 40%;
+    text-align: right;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .responsive-multistream-table td:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .responsive-multistream-table td:first-child {
+    padding-top: 0;
+  }
+  .responsive-multistream-table td::before { 
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    text-align: left;
+    font-weight: 600;
+    color: #FFC107;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
 </style>
 </head>
 <body>
@@ -354,7 +413,7 @@ table tr:hover{background:rgba(255,193,7,.05)}
   <img src="./usa_flag.jpg" alt="USA" class="flag"/>
   <button class="menu-item active" onclick="switchTab(0)"><span class="material-icons">video_call</span>STREAM SELECTION</button>
   <button class="menu-item" onclick="switchTab(1)"><span class="material-icons">analytics</span>REAL-TIME ANALYSIS</button>
-  <button class="menu-item" onclick="switchTab(2)"><span class="material-icons">dashboard</span>DASHBOARD</button>
+  <button class="menu-item" onclick="switchTab(2)"><span class="material-icons">dashboard</span>RAILWAY EVENTS</button>
   <button class="menu-item" onclick="switchTab(3)"><span class="material-icons">photo_library</span>FRAME GALLERY</button>
 </nav>
 
@@ -866,7 +925,7 @@ function renderMultiStream() {
     return;
   }
   const fmtDur = s => { const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60; return h > 0 ? h + 'h ' + m + 'm ' + sec + 's' : m > 0 ? m + 'm ' + sec + 's' : sec + 's'; };
-  el.innerHTML = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 style="font-weight:600">📊 Active Stream Analysis (' + simSessions.length + ')</h3><button class="btn btn-outline btn-sm" onclick="renderMultiStream()">Refresh</button></div><table><tr><th>Stream</th><th>Status</th><th>Runtime</th><th>Metrics</th><th>Detection Rate</th><th>Actions</th></tr>' + simSessions.map(s => '<tr><td><strong>' + s.stream_name + '</strong><br/><span style="color:#777;font-size:.75rem">ID: ' + s.stream_id + '</span></td><td><span class="chip ' + (s.active ? 'success' : 'error') + '"><span class="material-icons" style="font-size:.7rem">' + (s.active ? 'play_arrow' : 'stop') + '</span> ' + (s.active ? 'Running' : 'Stopped') + '</span></td><td><span style="display:flex;align-items:center;gap:4px"><span class="material-icons" style="font-size:1rem;color:#aaa">schedule</span>' + fmtDur(s.runtime_seconds || 0) + '</span></td><td><div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:.8rem;color:#aaa"><span class="material-icons" style="font-size:.8rem;color:#FFC107;vertical-align:middle">analytics</span> Frames: <strong>' + (s.frames_processed || 0).toLocaleString() + '</strong></span><span style="font-size:.8rem;color:#aaa"><span class="material-icons" style="font-size:.8rem;color:#4CAF50;vertical-align:middle">train</span> Trains: <strong>' + (s.trains_detected || 0).toLocaleString() + '</strong></span></div></td><td><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><span class="material-icons" style="font-size:1rem;color:#aaa">speed</span><strong>' + (s.detection_rate || 0) + '%</strong></div><div style="background:rgba(255,255,255,.1);height:6px;border-radius:3px;width:80px"><div style="background:' + (s.detection_rate > 20 ? '#4CAF50' : s.detection_rate > 10 ? '#ff9800' : '#f44336') + ';height:100%;border-radius:3px;width:' + Math.min(s.detection_rate || 0, 100) + '%;transition:.5s"></div></div></td><td><div style="display:flex;gap:4px"><button class="btn btn-outline btn-sm" onclick="openViewer(\'' + (SIM_STREAMS.find(st => st.id === s.stream_id)?.url || '') + '\',\'' + s.stream_name.replace(/'/g, "\\'") + '\')" title="View Stream"><span class="material-icons" style="font-size:1rem">visibility</span></button><button class="btn btn-error btn-sm" onclick="stopStream(\'' + s.stream_id + '\');renderMultiStream()"><span class="material-icons" style="font-size:1rem">stop</span></button></div></td></tr>').join('') + '</table>';
+  el.innerHTML = '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 style="font-weight:600">📊 Active Stream Analysis (' + simSessions.length + ')</h3><button class="btn btn-outline btn-sm" onclick="renderMultiStream()">Refresh</button></div><table class="responsive-multistream-table"><thead><tr><th>Stream</th><th>Status</th><th>Runtime</th><th>Metrics</th><th>Detection Rate</th><th>Actions</th></tr></thead><tbody>' + simSessions.map(s => '<tr><td data-label="Stream"><strong>' + s.stream_name + '</strong><br/><span style="color:#777;font-size:.75rem">ID: ' + s.stream_id + '</span></td><td data-label="Status"><span class="chip ' + (s.active ? 'success' : 'error') + '"><span class="material-icons" style="font-size:.7rem">' + (s.active ? 'play_arrow' : 'stop') + '</span> ' + (s.active ? 'Running' : 'Stopped') + '</span></td><td data-label="Runtime"><span style="display:flex;align-items:center;gap:4px"><span class="material-icons" style="font-size:1rem;color:#aaa">schedule</span>' + fmtDur(s.runtime_seconds || 0) + '</span></td><td data-label="Metrics"><div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:.8rem;color:#aaa"><span class="material-icons" style="font-size:.8rem;color:#FFC107;vertical-align:middle">analytics</span> Frames: <strong>' + (s.frames_processed || 0).toLocaleString() + '</strong></span><span style="font-size:.8rem;color:#aaa"><span class="material-icons" style="font-size:.8rem;color:#4CAF50;vertical-align:middle">train</span> Trains: <strong>' + (s.trains_detected || 0).toLocaleString() + '</strong></span></div></td><td data-label="Detection Rate"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;justify-content:flex-end"><span class="material-icons" style="font-size:1rem;color:#aaa">speed</span><strong>' + (s.detection_rate || 0) + '%</strong></div><div style="background:rgba(255,255,255,.1);height:6px;border-radius:3px;width:80px;margin-left:auto"><div style="background:' + (s.detection_rate > 20 ? '#4CAF50' : s.detection_rate > 10 ? '#ff9800' : '#f44336') + ';height:100%;border-radius:3px;width:' + Math.min(s.detection_rate || 0, 100) + '%;transition:.5s"></div></div></td><td data-label="Actions"><div style="display:flex;gap:4px;justify-content:flex-end"><button class="btn btn-outline btn-sm" onclick="openViewer(\'' + (SIM_STREAMS.find(st => st.id === s.stream_id)?.url || '') + '\',\'' + s.stream_name.replace(/'/g, "\\'") + '\')" title="View Stream"><span class="material-icons" style="font-size:1rem">visibility</span></button><button class="btn btn-error btn-sm" onclick="stopStream(\'' + s.stream_id + '\');renderMultiStream()"><span class="material-icons" style="font-size:1rem">stop</span></button></div></td></tr>').join('') + '</tbody></table>';
 }
 
 /* ═══════════════ ANALYTICS ═══════════════ */
